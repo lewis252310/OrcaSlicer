@@ -1,3 +1,63 @@
+## Fin support from OrcaSlicer
+
+<img src="SoftFever_doc/fin-support/fin_printed_01.jpg" alt="Printed model with Fin supports still attached on the build plate" width="100%">
+
+This repository is used solely to integrate personally developed features. The main OrcaSlicer repository is [OrcaSlicer/OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer).
+
+All feature development is based on upstream OrcaSlicer. Each actively maintained feature branch receives upstream merges at least once a month. Features are developed on dedicated branches and integrated into this fork's `main`; upstream pull requests are submitted from the corresponding feature branches. Builds from this fork are not official OrcaSlicer releases.
+
+## What is Fin support
+
+The [feature/fin-support branch](https://github.com/lewis252310/OrcaSlicer/tree/feature/fin-support) adds native fin-shaped supports with intermittent side contacts to help stabilize models during printing. Fins are generated as support toolpaths inside OrcaSlicer.
+
+**[Download Fin support (Preview)](https://github.com/lewis252310/OrcaSlicer/releases/tag/fin-support-v0.1.0)**
+
+<p>
+  <img src="SoftFever_doc/fin-support/fin_painted_01.jpg" alt="Side view of the model with green painted regions for Fin placement" width="32%">
+  <img src="SoftFever_doc/fin-support/fin_slicing_01.png" alt="Sliced model with green Fin supports and build-plate feet" width="32%">
+  <img src="SoftFever_doc/fin-support/fin_printed_02.jpg" alt="Another view of the printed model with attached Fin supports" width="32%">
+</p>
+
+<p>
+  <img src="SoftFever_doc/fin-support/fin_painted_02.jpg" alt="Underside view showing the painted regions around the model" width="49%">
+  <img src="SoftFever_doc/fin-support/fin_slicing_02.png" alt="Model toolpaths with Fin supports not shown" width="49%">
+</p>
+
+<p>
+  <img src="SoftFever_doc/fin-support/fin_printed_v0.1.0_1.jpg" alt="Printed tilted model with Fin supports and spaced side contacts" width="49%">
+  <img src="SoftFever_doc/fin-support/fin_printed_v0.1.0_4.jpg" alt="Caliper measuring a printed fin, showing 0.91 mm" width="49%">
+</p>
+
+#### What fin support can do now?
+
+- **Painted shape:** derives point, line and branched fin layouts from painted regions, with crease-aware placement.
+- **Contact controls:** adjustable contact-band height, spacing and penetration, plus fin depth, thickness and expansion toward the build plate.
+- **Placement styles:** Simple, Simulated and Painted shape.
+
+The published branch focuses on side-contact fins. Independent Fin Z planning and top contact interface layers are future work.
+
+For Fin support, use the download or feature branch linked above; this `main` branch does not yet include it.
+
+### Videos
+
+Background on fin support design and related tools:
+
+- **Slant 3D:** [Design Custom Supports for Diagonal 3D Printing](https://www.youtube.com/watch?v=K8AVjipCabM)
+- **Slant 3D:** [How to Design Better Support Fins for 3D Printing](https://www.youtube.com/watch?v=vnn4XeKQobs)
+- **Clough42:** [Without a Trace: 3D Printed Supports That Remove Like Magic](https://www.youtube.com/watch?v=1Zocl7n98xY)
+- **Matthew Trahan:** [Stop Using Tree Support for Your 3D Prints](https://www.youtube.com/watch?v=WGsi5SCurpM)
+
+### Related discussions and projects
+
+- [OrcaSlicer discussion #13935: Slicer generated "support fins" to enable printing parts at a 45 degree angle on a corner](https://github.com/OrcaSlicer/OrcaSlicer/discussions/13935)
+- [OrcaSlicer discussion #15801: Fin Supports / Support Fins](https://github.com/OrcaSlicer/OrcaSlicer/discussions/15801)
+- [gittrahan/support-fins](https://github.com/gittrahan/support-fins): a separate project that generates breakaway support fins as model geometry.
+- **Upstream Fin support PR:** [OrcaSlicer/OrcaSlicer#17234 — Draft](https://github.com/OrcaSlicer/OrcaSlicer/pull/17234)
+
+---
+
+The original OrcaSlicer README follows.
+
 <div align="center">
 
 <picture>
